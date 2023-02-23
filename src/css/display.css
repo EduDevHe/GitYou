@@ -1,0 +1,17 @@
+.displayBlock {
+  display: block;
+}
+.displayFlex {
+  display: flex;
+}
+.displayGrid {
+  display: grid;
+}
+
+.flexColum {
+  flex-direction: column;
+}
+
+.flexRow {
+  flex-direction: row;
+}

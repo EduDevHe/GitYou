@@ -1,0 +1,12 @@
+:root {
+  --red: rgb(240, 7, 7);
+  --dark-red: rgb(97, 0, 0);
+  --light-grey: rgb(170, 170, 170);
+  --dark-grey: rgb(85, 85, 85);
+  --bg-color: ;
+}
+
+@font-face {
+  font-family: "dommed";
+  src: local("dommed"), url("/doomed.ttf") format("truetype");
+}

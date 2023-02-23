@@ -4,17 +4,51 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/styles.css" />
+    <!-- <link rel="stylesheet" href="src/styles.css" /> -->
+    <link rel="stylesheet" href="src/css/aling.css" />
+    <link rel="stylesheet" href="src/css/justify.css" />
+    <link rel="stylesheet" href="src/css/gap.css" />
+    <link rel="stylesheet" href="src/css/display.css" />
+    <link rel="stylesheet" href="src/css/styles.css" />
+    <link rel="stylesheet" href="src/css/root.css" />
+    <link rel="stylesheet" href="src/css/reset.css" />
+
     <title>Vite + TS</title>
   </head>
   <body>
     <div id="app">
-      <div class="hud">
-        <div class="commits"></div>
-        <div class="stars"></div>
-        <div class="langs"></div>
-        <div class="gif"></div>
-        <div class="persets"></div>
+      <div class="backGround">
+        <div class="hud textHud displayFlex gap10">
+          <div class="commits displayFlex flexColum">
+            <div class="content displayFlex alingCenter flexRow justifyEnd">
+              20
+
+              <div class="persentContainer">
+                <p class="persentText">o</p>
+                <p>/</p>
+                <p class="persentText">o</p>
+              </div>
+            </div>
+            <h2 class="title">commits</h2>
+          </div>
+          <div class="stars displayFlex flexColum">
+            <div class="content justifyCenter">40</div>
+            <h2 class="title">stars</h2>
+          </div>
+          <div class="langs">
+            <img
+              class="pixelimage"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+            />
+
+            <img
+              class="pixelimage"
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+            />
+          </div>
+          <div class="gif"></div>
+          <div class="persets"></div>
+        </div>
       </div>
     </div>
     <script type="module" src="/src/main.ts"></script>
