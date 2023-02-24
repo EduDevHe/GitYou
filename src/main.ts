@@ -18,24 +18,41 @@ async function getRepos(url: string) {
 
 const repos = await getRepos(url);
 
-const languageNames: string[] = repos.map((repos: Repos) => {
+const reposNames: string[] = repos.map((repos: Repos) => {
   return repos.name;
 });
 
-const languagesUrl: string[] = languageNames.map((lang) => {
+const languagesUrl: string[] = reposNames.map((lang) => {
   return `https://api.github.com/repos/EduDevHe/${lang}/languages`;
 });
 
-const promises = languagesUrl.map((url) => fetch(url));
+interface Language {
+  [key: string]: number;
+}
 
-const responses = await Promise.all(promises);
+async function getLanguagesForRepositories(url: string[]): Promise<Language[]> {
+  const promises = url.map((url) => fetch(url));
+  const responses = await Promise.all(promises);
 
-const data = (await Promise.all(
-  responses.map((response) => response.json())
-)) as unknown[];
+  const data = (await Promise.all(
+    responses.map((response) => response.json())
+  )) as Language[];
 
+  return data;
+}
+
+const languages = await getLanguagesForRepositories(languagesUrl);
+
+const languagesArray = languages.map((lang) => Object.keys(lang));
+
+const listLanguage = languagesArray.flatMap((langs) => langs);
+
+function rankingLanguage() {}
+
+console.log(listLanguage);
 console.log(repos);
-console.log(languageNames);
+console.log(reposNames);
 console.log(languagesUrl);
-console.log(data);
+console.log(languages);
+
 export {};
