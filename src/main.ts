@@ -49,10 +49,4 @@ const listLanguage = languagesArray.flatMap((langs) => langs);
 
 function rankingLanguage() {}
 
-console.log(listLanguage);
-console.log(repos);
-console.log(reposNames);
-console.log(languagesUrl);
-console.log(languages);
-
 export {};
