@@ -4,9 +4,6 @@
   --light-grey: rgb(170, 170, 170);
   --dark-grey: rgb(85, 85, 85);
   --bg-color: ;
-}
-
-@font-face {
-  font-family: "dommed";
-  src: local("dommed"), url("/doomed.ttf") format("truetype");
+  font-size: 62.5%;
+  font-family: "VT323", monospace;
 }

@@ -4,51 +4,36 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="src/styles.css" /> -->
-    <link rel="stylesheet" href="src/css/aling.css" />
-    <link rel="stylesheet" href="src/css/justify.css" />
-    <link rel="stylesheet" href="src/css/gap.css" />
-    <link rel="stylesheet" href="src/css/display.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="src/css/styles.css" />
     <link rel="stylesheet" href="src/css/root.css" />
     <link rel="stylesheet" href="src/css/reset.css" />
 
-    <title>Vite + TS</title>
+    <title>GIT YOU</title>
   </head>
   <body>
     <div id="app">
-      <div class="backGround">
-        <div class="hud textHud displayFlex gap10">
-          <div class="commits displayFlex flexColum">
-            <div class="content displayFlex alingCenter flexRow justifyEnd">
-              20
-
-              <div class="persentContainer">
-                <p class="persentText">o</p>
-                <p>/</p>
-                <p class="persentText">o</p>
-              </div>
+      <div class="wrapper">
+        <header class="header">
+          <div class="header__log">
+            <p>GITHUB</p>
+            <p>GUD</p>
+          </div>
+        </header>
+        <main class="main displayFlex flexColum alingCenter">
+          <section class="main__search">
+            <label for=""> USER NAME</label>
+            <div class="search__input">
+              <input type="text" />
             </div>
-            <h2 class="title">commits</h2>
-          </div>
-          <div class="stars displayFlex flexColum">
-            <div class="content justifyCenter">40</div>
-            <h2 class="title">stars</h2>
-          </div>
-          <div class="langs">
-            <img
-              class="pixelimage"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-            />
-
-            <img
-              class="pixelimage"
-              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
-            />
-          </div>
-          <div class="gif"></div>
-          <div class="persets"></div>
-        </div>
+          </section>
+          <aside class="main__aside"></aside>
+        </main>
       </div>
     </div>
     <script type="module" src="/src/main.ts"></script>
