@@ -47,6 +47,4 @@ const languagesArray = languages.map((lang) => Object.keys(lang));
 
 const listLanguage = languagesArray.flatMap((langs) => langs);
 
-function rankingLanguage() {}
-
 export {};
