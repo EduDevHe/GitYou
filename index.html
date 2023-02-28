@@ -1,47 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="src/css/styles.css" />
-    <link rel="stylesheet" href="src/css/root.css" />
-    <link rel="stylesheet" href="src/css/reset.css" />
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="src/css/styles.css" />
+		<link rel="stylesheet" href="src/css/root.css" />
+		<link rel="stylesheet" href="src/css/reset.css" />
 
-    <title>GIT YOU</title>
-  </head>
-  <body>
-    <div id="app">
-      <div class="wrapper">
-        <header class="header">
-          <div class="header__logo">
-            <div class="logo__text">
-              <p>GIT</p>
-              <div></div>
-              <p>GUD</p>
-            </div>
-            <div class="logo__gif"></div>
-          </div>
-        </header>
-        <main class="main displayFlex flexColum alingCenter">
-          <section class="main__search">
-            <label for=""> USER NAME</label>
-            <div class="search__input">
-              <input type="text" />
-            </div>
-          </section>
-          <section class="main__status"></section>
+		<title>GIT YOU</title>
+	</head>
+	<body>
+		<div id="app">
+			<div class="wrapper">
+				<header class="header">
+					<div class="header__logo">
+						<div class="logo__text">
+							<p>GIT</p>
+							<div></div>
+							<p>GUD</p>
+						</div>
+						<div class="logo__gif"></div>
+					</div>
+				</header>
+				<main class="main displayFlex flexColum alingCenter">
+					<section class="main__search">
+						<label for=""> USER NAME</label>
+						<div class="search__input">
+							<input type="text" />
+						</div>
+					</section>
+					<section class="main__status">
+						<div class="main__commits">
+							<canvas id="commitsChart"></canvas>
+						</div>
+						<div class="main__contributions">
+							<canvas></canvas>
+						</div>
+						<div class="main__activity">
+							<canvas></canvas>
+						</div>
+					</section>
 
-          <aside class="main__aside"></aside>
-        </main>
-      </div>
-    </div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+					<aside class="main__aside"></aside>
+				</main>
+			</div>
+		</div>
+		<script type="module" src="/src/main.ts"></script>
+	</body>
 </html>

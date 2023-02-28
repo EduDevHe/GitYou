@@ -1,63 +1,62 @@
 .header {
-  padding: 1rem;
-  font-size: 5rem;
+	padding: 1rem;
+	font-size: 5rem;
 }
 
 .header__logo {
-  display: flex;
-  font-size: 10rem;
+	display: flex;
+	font-size: 10rem;
 }
 
 .logo__text div {
-  outline: 1rem solid black;
+	outline: 1rem solid black;
 }
 
 .wrapper {
-  width: 100vw;
-  height: 100vh;
-  padding: 1rem;
-  border: 2rem solid black;
-  background: radial-gradient(circle, #000000 10%, transparent 11%);
-  background-size: 1em 1em;
-  background-color: #ffffff;
-  opacity: 0.65;
+	width: 100vw;
+	height: 100vh;
+	padding: 1rem;
+	border: 2rem solid black;
+	background: radial-gradient(circle, #000000 10%, transparent 11%);
+	background-size: 1em 1em;
+	background-color: #ffffff;
 }
 .main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .main__search {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
 }
 .main__search label {
-  font-size: 5rem;
+	font-size: 5rem;
 }
 
 .search__input {
-  width: 100%;
-  height: 5rem;
-  border: 0.5rem solid black;
+	width: 100%;
+	height: 5rem;
+	border: 0.5rem solid black;
 }
 
 .search__input input {
-  padding: 1rem;
-  width: 100%;
-  height: 100%;
-  border: none;
-  outline: none;
+	padding: 1rem;
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
 }
 
 .main__status {
-  display: flex;
-  width: 100%;
-  outline: 1px solid red;
-  min-height: 20rem;
-  height: fit-content;
+	display: flex;
+	width: 100%;
+	outline: 1px solid red;
+	min-height: 20rem;
+	height: fit-content;
 }

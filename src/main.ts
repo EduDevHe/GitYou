@@ -1,5 +1,5 @@
 import { Repos } from "./dto/repos";
-
+import { totalCommits } from "./components/totalCommits/totalCommits";
 const url = "https://api.github.com/users/EduDevHe/repos";
 
 // get all repositories
@@ -46,5 +46,6 @@ const languages = await getLanguagesForRepositories(languagesUrl);
 const languagesArray = languages.map((lang) => Object.keys(lang));
 
 const listLanguage = languagesArray.flatMap((langs) => langs);
+totalCommits();
 
 export {};
