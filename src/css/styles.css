@@ -53,3 +53,11 @@
   border: none;
   outline: none;
 }
+
+.main__status {
+  display: flex;
+  width: 100%;
+  outline: 1px solid red;
+  min-height: 20rem;
+  height: fit-content;
+}
