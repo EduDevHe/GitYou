@@ -1,11 +1,15 @@
 .header {
   padding: 1rem;
   font-size: 5rem;
-  font-weight: 500;
 }
 
 .header__logo {
   display: flex;
+  font-size: 10rem;
+}
+
+.logo__text div {
+  outline: 1rem solid black;
 }
 
 .wrapper {
