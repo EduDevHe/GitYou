@@ -12,6 +12,35 @@
 	outline: 1rem solid black;
 }
 
+/* .logo__gif {
+	width: 152px;
+	height: 151px;
+	overflow: hidden;
+	position: absolute;
+	background: url("/spritesheet.png");
+	background-repeat: no-repeat;
+	animation: sprite 200ms steps(6) infinite;
+} */
+
+@keyframes sprite {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 900px 0;
+	}
+}
+
+/* 72w 26h sprite 24w */
+.logo__gif {
+	width: 150px;
+	height: 150px;
+	overflow: hidden;
+	background: url("/spritesheet.png");
+	background-repeat: no-repeat;
+	animation: sprite 500ms steps(6) infinite;
+}
+
 .wrapper {
 	width: 100vw;
 	height: 100vh;
