@@ -12,33 +12,23 @@
 	outline: 1rem solid black;
 }
 
-/* .logo__gif {
-	width: 152px;
-	height: 151px;
-	overflow: hidden;
-	position: absolute;
-	background: url("/spritesheet.png");
-	background-repeat: no-repeat;
-	animation: sprite 200ms steps(6) infinite;
-} */
-
-@keyframes sprite {
-	0% {
-		background-position: 0 0;
-	}
-	100% {
-		background-position: 900px 0;
-	}
-}
-
 /* 72w 26h sprite 24w */
 .logo__gif {
-	width: 150px;
-	height: 150px;
-	overflow: hidden;
+	width: 172px;
+	height: 171px;
 	background: url("/spritesheet.png");
-	background-repeat: no-repeat;
-	animation: sprite 500ms steps(6) infinite;
+
+	/* animation: sprite 1s steps(6) infinite; */
+	animation: sprite 1s steps(64) infinite;
+}
+
+@keyframes sprite {
+	from {
+		background-position: 0;
+	}
+	to {
+		background-position: -11008px;
+	}
 }
 
 .wrapper {
